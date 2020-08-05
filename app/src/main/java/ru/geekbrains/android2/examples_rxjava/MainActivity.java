@@ -7,13 +7,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.reactivestreams.Subscription;
-
 import io.reactivex.Observable;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
     TextView textViewDisplay;
     Observable<String> observableJust;
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btn = findViewById(R.id.btnObservableJust);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 observableJust.subscribe(observerJust);
             }
         });
@@ -63,16 +61,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btnObservableJust:
-                observableJust.subscribe(observerJust);
-            case R.id.btnObservableCreate:
-                observableJust.subscribe(observerJust);
-
-            case R.id.btnObservf:
-                //mSubscription.unsubscribe();
-        }
-    }
+//    @Override
+//    public void onClick(View view) {
+//        switch (view.getId()) {
+//            case R.id.btnObservableJust:
+//                observableJust.subscribe(observerJust);
+//            case R.id.btnObservableCreate:
+//                observableJust.subscribe(observerJust);
+//
+//            case R.id.btnObservf:
+//                //mSubscription.unsubscribe();
+//        }
+//    }
 }
