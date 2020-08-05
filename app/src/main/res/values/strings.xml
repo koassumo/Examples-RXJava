@@ -3,4 +3,7 @@
     <string name="btn_observable_create">Observable Create</string>
     <string name="no_data">no data</string>
     <string name="btn_observable_just">obserbable just</string>
+    <string name="observable_from_array">observable from array</string>
+    <string name="btn_observable_edit_text_emitter">observable edit text emitter</string>
+    <string name="btn_observable_operators">observable operators</string>
 </resources>

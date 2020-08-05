@@ -14,16 +14,29 @@
         android:text="@string/btn_observable_just" />
 
     <Button
-        android:id="@+id/btnObservableCreate"
+        android:id="@+id/btnObservableFromArray"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_observable_create" />
+        android:text="@string/observable_from_array" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your text please"
+        />
 
     <Button
-        android:id="@+id/btnObservf"
+        android:id="@+id/btnObservableOperators"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn_observable_create" />
+        android:text="@string/btn_observable_operators" />
+
+    <Button
+        android:id="@+id/btnObservableEditTextEmitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_observable_edit_text_emitter" />
 
     <TextView
         android:id="@+id/textViewDisplay"
